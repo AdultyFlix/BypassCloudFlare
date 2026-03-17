@@ -3,7 +3,7 @@ name: FlareSolverr + Ngrok (6h)
 on:
   workflow_dispatch:   # Manual trigger
   schedule:
-    - cron: '0 2 * * *'  # Optional: daily at 2:00 UTC
+    - cron: '0 0 1 * *'  # Optional: Runs at 00:00, on day 1 of the month
 
 jobs:
   flaresolverr-ngrok:
